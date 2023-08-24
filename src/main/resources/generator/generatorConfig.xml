@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="mybatis" targetRuntime="MyBatis3" defaultModelType="flat">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://172.16.1.221:9527/db_cruddemo"
+                        userId="GreatTeam" password="Tapd!%!^" />
+        <javaModelGenerator targetPackage="com.example.cruddemo.domain" targetProject="src/main/java" />
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources" />
+        <javaClientGenerator targetPackage="com.example.cruddemo.dao" targetProject="src/main/java"
+                             type="XMLMAPPER" />
+        <table tableName="db_hdk_user" domainObjectName="DbHdkUser" />
+    </context>
+</generatorConfiguration>
+
